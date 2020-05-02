@@ -43,13 +43,5 @@ public class AbstractLauncher {
         }
 
         System.setProperty(Constants.SYS_PROPS_LOG4J_CONFIG, "file:" + userDir + "/conf/log4j.xml");
-//    	System.setProperty(Constants.SYS_PROPS_LOG4J2_CONFIG,"file:" + userDir + "/conf/log4j2.xml");
-        
-    /* // 获取存储log的基准path
-        String logBasePath = System.getProperty(
-                Constants.SYS_PROPS_LOG_BASE_PATH, SystemUtils.USER_DIR);
-        // 设置log4j日志保存目录
-        System.setProperty(Constants.SYS_PROPS_LOG_DIR, 
-                logBasePath.replaceAll("\\\\", "/") + "/logs");*/
     }
 }

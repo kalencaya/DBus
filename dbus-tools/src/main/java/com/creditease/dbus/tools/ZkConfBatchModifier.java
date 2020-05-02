@@ -71,44 +71,6 @@ public class ZkConfBatchModifier {
             }
         }
         zkService.close();
-
-        //String basePath = args[0];
-        //String oldString = args[1];
-        //String newString = args[2];
-        //if (!basePath.startsWith(Constants.DBUS_ROOT)) {
-        //    logger.error("The base path is not start with " + Constants.DBUS_ROOT + ". Please check!");
-        //    return;
-        //}
-        //
-        //String checker = null;
-        //if (args.length == 4) {
-        //    checker = args[3];
-        //}
-        //
-        //ZkService zkService = new ZkService(zkServer);
-        //
-        //ZkNode baseNode = new ZkNode(basePath); // Name name name Todo not start with  refuse; 直接搞指定path底下的。
-        //baseNode.setPath(basePath);
-        //
-        //
-        //byte[] data = zkService.getData(baseNode.getPath());
-        //if (data != null && data.length > 0) {
-        //    String orignialContent = new String(data, UTF8);
-        //
-        //    if (StringUtils.isNotBlank(checker) && orignialContent.indexOf(oldString) == -1 && orignialContent.indexOf(checker) != -1) {
-        //        logger.warn(String.format("Found checker --- %s, But not found %s at %s", checker, oldString, baseNode.getPath()));
-        //    }
-        //
-        //    if (orignialContent.indexOf(oldString) != -1) {
-        //        logger.info(String.format("Found  %s at %s in \n%s", oldString, baseNode.getPath(), orignialContent));
-        //        String newContent = orignialContent.replace(oldString, newString);
-        //        zkService.setData(baseNode.getPath(), newContent.getBytes(UTF8));
-        //    }
-        //
-        //}
-        //
-        //replaceContentRecursively(zkService, baseNode, oldString, newString, checker);
-        //zkService.close();
     }
 
 

@@ -53,7 +53,7 @@ public class AnnotationScanner {
         return classes;
     }
 
-    public static interface Filter {
+    public interface Filter {
         boolean filter(Class<?> clazz, Class<? extends Annotation> annotation);
     }
 

@@ -49,9 +49,4 @@ public enum MessageEncodeType {
     public static Map<String, String> getMap() {
         return map;
     }
-
-    public static void main(String[] args) {
-
-        System.out.println("");
-    }
 }
